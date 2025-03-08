@@ -45,9 +45,6 @@ public class Main {
     public static Integer ler() {
         Scanner leitor = new Scanner(System.in);
         String str = leitor.nextLine();
-
-        System.out.println(str.matches("[0-9]"));
-
         if(str.isBlank() || !str.matches("[0-9]") ){
             return 0;
         }
