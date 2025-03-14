@@ -10,7 +10,7 @@ public class Main {
         System.out.println("Bem vindo a recomendações de viagens. Digite os numeros correspondente de cada resposta");
         System.out.println("Pergunta 1: Você prefere clima quente ou frio? " + "\n 1. Quente" + "\n 2. Frio" );
 
-        Integer resposta = ler();
+        int resposta = ler();
 
         if (resposta != 1 && resposta != 2){
             System.out.println("Erro ao digitar a resposta");
@@ -45,7 +45,7 @@ public class Main {
     public static Integer ler() {
         Scanner leitor = new Scanner(System.in);
         String str = leitor.nextLine();
-        if(str.isBlank() || !str.matches("[0-9]") ){
+        if(!str.matches("[0-9]")){
             return 0;
         }
 
